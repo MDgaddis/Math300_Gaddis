@@ -1,8 +1,12 @@
-A = [1 2;3 4];
-B = [5 6; 7 8];
+%% Variables
+a = 0;
 
-C1 = A*B;
-C2 = A.*B;
+%% Code
 
-disp(C1);
-disp(C2);
+if a > 0
+    x = 0;
+elseif a < 0
+    x = 1;
+elseif a == 0
+    x = 2;
+end 
