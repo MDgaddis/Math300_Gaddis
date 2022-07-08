@@ -1,5 +1,6 @@
+clear; 
 %% Variables
-N = 1000;
+N = 100000;
 num_rol = zeros(N,1);
 avg_num_rol  = 0;
 
@@ -17,7 +18,10 @@ for n = 1:N
 end
 
 avg_num_rol = mean(num_rol);
-
 disp(avg_num_rol);
+
+%% Plot 
+
+%histogram(num_rol);
 
 
