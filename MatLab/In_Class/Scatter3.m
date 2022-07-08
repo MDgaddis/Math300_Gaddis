@@ -1,13 +1,14 @@
 clear;
 %% Variables
 
-theta = linspace(0, 1, 500);
-x = exp(theta).*sin(100*theta);
-y = exp(theta).*cos(100*theta);
+[X Y Z] = sphere(16);
+x = [0.5*X(:); 0.75*X(:); X(:)];
+y = [0.5*Y(:); 0.75*Y(:); Y(:)];
+z = [0.5*Z(:); 0.75*Z(:); Z(:)];
 
 %% Plots
 
-s = scatter(x,y);
+s = scatter3(x,y,z);
 
 %----------Plot Settings-----------%
 s.LineWidth = .6;
