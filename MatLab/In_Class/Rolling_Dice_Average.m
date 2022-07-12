@@ -22,6 +22,6 @@ disp(avg_num_rol);
 
 %% Plot 
 
-%histogram(num_rol);
+histogram(num_rol);
 
 

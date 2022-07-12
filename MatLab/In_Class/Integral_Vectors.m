@@ -1,7 +1,7 @@
 clear;
 
 %% Variables
-N = 100;
+N = 10000000;
 x = 0:1/N:1;
 y = sin(x);
 
