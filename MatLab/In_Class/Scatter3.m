@@ -11,7 +11,7 @@ z = [0.5*Z(:); 0.75*Z(:); Z(:)];
 s = scatter3(x,y,z);
 
 %----------Plot Settings-----------%
-s.LineWidth = .6;
-s.MarkerEdgeColor = 'b';
-s.MarkerFaceColor = [0 0.5 0.5];
+%s.LineWidth = .6;
+%s.MarkerEdgeColor = 'b';
+%s.MarkerFaceColor = [0 0.5 0.5];
 %----------------------------------%
