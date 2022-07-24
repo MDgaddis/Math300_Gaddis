@@ -22,7 +22,6 @@ def midpoint(f,a=0,b=1,n=10):
         
     # x values for the methods   
     x1 = np.arange((a+h/2),(b+h/2),h)
-    x = np.arange(a,b,h)
     
     # plots for the methods
     plt.plot(x1,f(x1))  
