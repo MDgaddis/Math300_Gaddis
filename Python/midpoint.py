@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul 24 16:28:45 2022
+
+@author: Matt
+"""
+
 #!/usr/bin/env python3
 
 import matplotlib.pyplot as plt
@@ -8,9 +15,9 @@ def midpoint(f,a=0,b=1,n=10):
     h = (b-a)/n
     heights = []
     total = 0   # Calculating the total
-
+    x = np.arange(a,b,h)
     for i in range(n):
-        total += f((i*h + (i+1)*h)/2)*(h)       # Calculating the total
+        total += f((x[i] + (x[i+1]))/2)*(h)       # Calculating the total
         heights.append(f((i*h + (i+1)*h)/2))    # Array of the heights given by the midpoint of the function
         
     # x values for the methods   
