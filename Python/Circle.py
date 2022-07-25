@@ -17,11 +17,8 @@ class circle:
     
     def inside(self,x,y):
         dist = sqrt((x-self.cx)**2 + (y-self.cy)**2)
-        if dist <= self.r:
-            return True
-        else:
-            return False
-        
+        print(dist <= self.r)
+         
         
 
 
