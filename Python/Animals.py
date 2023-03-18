@@ -4,16 +4,16 @@
 
 import random
 
-class animal():
-    def __init__(self,x=0,y=9):
+
+class animal:
+    def __init__(self, x=0, y=0):
         
         self.x = x
         self.y = y
         self.hitpoints = 100
 
-    
-    def move(self,x_min,x_max,y_min,y_max):
-        a = random.randint(1,4)
+    def move(self, x_min, x_max, y_min, y_max):
+        a = random.randint(1, 4)
         
         if a == 1:
             self.y += 1
@@ -33,10 +33,10 @@ class animal():
         if self.y >= y_max:
             self.y = y_max
 
+
 class predator(animal):
     pass
 
-    
     def attack(self,person):
         
         distance = (self.x - person.x)**2 + (self.y - person.y)**2
@@ -44,7 +44,7 @@ class predator(animal):
         if distance < 1:
             damage_roll = random.randint(1,20)
             person.check_damage(damage_roll)
-        
+
 
 class prey(animal):
     pass
@@ -57,12 +57,11 @@ class prey(animal):
             self.hitpoints -= b*3
         elif b < 15:
             self.hitpoints += 0
-            
+
         
         
 
 
-        
         
         
         

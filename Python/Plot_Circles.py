@@ -23,7 +23,8 @@ for i in range(len(circle_plots)):
     g = random.random()
     b = random.random()
     color= (r,g,b)
-    circle_plots[i] = plt.Circle((circles[i].cx,circles[i].cy), circles[i].r, fill = False, color = color)
+    circle_plots[i] = plt.Circle((circles[i].cx,circles[i].cy), circles[i].r, 
+                                 fill = False, color = color)
     ax.add_artist(circle_plots[i])
 
 plt.show()
